@@ -1,5 +1,5 @@
 let astronauta = new Set<string>();
-let listaFallos = new Set<string>();
+
 let contadorFallos = 0;
 let listaNombres = document.getElementById("listaNombres"); 
 
@@ -14,7 +14,7 @@ function mostrar() {
         
         alert("duplicado");
         contadorFallos++;
-        listaFallos.add(nuevoNombre.value.toString());
+       
         if (fallosMuestra != null) fallosMuestra.innerHTML = `numeroFallosTotales: ${contadorFallos}`;
     }
   
